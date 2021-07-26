@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.1",
   "private": true,
-  "repository": "https://github.com/shaenr/server-side-squat",
+  "repository": "https://github.com/shaenr/serverside-squat",
   "author": "shaenr",
   "license": "MPL-2.0",
   "scripts": {
