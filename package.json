@@ -1,0 +1,16 @@
+{
+  "name": "serversidesquat",
+  "type": "module",
+  "version": "0.1",
+  "private": true,
+  "repository": "https://github.com/shaenr/server-side-squat",
+  "author": "shaenr",
+  "license": "MPL-2.0",
+  "scripts": {
+    "start": "node dev-server.js",
+    "build": ""
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

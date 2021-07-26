@@ -1,0 +1,15 @@
+
+_(`plastic bottles from public waste contain droplets 
+of backwash and high fructose beverage.`)
+
+{"text": {
+    "id": "file",
+    "value": "File",
+    "popup": {
+      "menuitem": [
+        {"value": "New", "onclick": "CreateNewDoc()"},
+        {"value": "Open", "onclick": "OpenDoc()"},
+        {"value": "Close", "onclick": "CloseDoc()"}
+      ]
+    }
+  }}

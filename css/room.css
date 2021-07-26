@@ -1,0 +1,85 @@
+#mainBtns div {
+	float: left; /* Float the buttons side by side */
+	margin-right: 10px;
+}
+
+#mainBtns div:not(:last-child) {
+	/*border-right: none; !* Prevent double borders *!*/
+}
+
+#mainBtns:before {
+	/*content: attr(data-legend);*/
+	position: relative;
+	top: -5px;
+	display: block;
+	/*color: var(--faint-color)*/
+}
+
+/* Clear floats (clearfix hack) */
+#mainBtns:after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+div#installBtns {
+	position: absolute;
+	top: 80px;
+	left: 0px;
+}
+
+div#installBtns:before, div#craftBtns:before, div#buyBtns:before {
+	content: attr(data-legend);
+	position: relative;
+	top: -5px;
+	color: var(--faint-color)
+}
+
+div#craftBtns {
+	position: absolute;
+	top: 50px;
+	left: 150px;
+}
+
+div#buyBtns {
+	position: absolute;
+	top: 50px;
+	left: 300px;
+}
+
+div#storesContainer {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+div#stores:before, div#weapons:before {
+	position: absolute;
+	/* background: white; */
+	content: attr(data-legend);
+	left: 8px;
+	top: -13px;
+}
+
+div#stores {
+	position: relative;
+	z-index:10;
+	border: 1px solid var(--faint-color);
+	cursor: default;
+	padding: 5px 10px;
+	width: 200px;
+}
+
+div.storeRow {
+	position: relative;
+}
+
+div#weapons {
+	margin-top: 15px;
+	position: relative;
+	right: 0px;
+	border: 1px solid var(--faint-color);
+	cursor: default;
+	padding: 5px 10px;
+	width: 200px;
+}

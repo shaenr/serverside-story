@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html itemscope itemtype="https://schema.org/CreativeWork">
+<head>
+	<meta charset="UTF-8"/>
+	<!--  
+		Server Side Squat (v0.1)
+		==================
+		
+		a thematically different fork of adarkroom -- featuring color, cyberpunk, and vaporwave. 
+
+		Inspired By (https://github.com/doublespeakgames/adarkroom/)
+		Contribute on GitHub! (https://github.com/shaenr/aparentnode)
+		License (https://raw.githubusercontent.com/shaenr/aparentnode/main/LICENSE)
+	-->
+	<title>Server Side Squat</title>
+	<meta itemprop="description" name="description" property="og:description" content="a thematically different fork of adarkroom -- featuring color, cyberpunk, and vaporwave.">
+	<meta itemprop="image" property="og:image" content="" />
+	<meta itemprop="name" property="og:title" content="" />
+	<!-- <link rel="shortcut icon" href="" />
+	<link rel="image_src" href="" /> -->
+	<!-- <link rel="stylesheet" href="http://maxcdn.bootssoftwarecdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script>
+		if(!window.jQuery) {
+			document.write('<script src="lib/jquery.min.js"><\/script>')
+		}
+	</script>
+	<script src="lib/jquery.color-2.1.2.min.js"></script>
+	<script src="lib/jquery.event.move.min.js"></script>
+	<script src="lib/jquery.event.swipe.min.js"></script>
+	<script src="lib/base64.min.js"></script>
+	<script src="lib/translate.min.js"></script>
+
+	
+	<script>
+		// try to read "lang" param's from url
+		var lang = decodeURIComponent((new RegExp('[?|&]lang=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null;
+		// if no language requested, try to read it from local storage
+		if(!lang){
+			try {
+				lang = localStorage.lang;
+			} catch(e) {}
+		}
+		// if a language different than english requested, load all translations
+		if(lang && lang != 'en'){
+			document.write('<script src="lang/'+lang+'/strings.js"><\/script>');
+			document.write('<link rel="stylesheet" type="text/css" href="lang/'+lang+'/main.css" \/>');
+		}
+	</script>
+
+	<script src="script/Button.js"></script>
+	<script src="script/audioLibrary.js"></script>
+	<script src="script/audio.js"></script>
+
+	<script src="script/perks.js"></script>
+	<script src="script/tradeGoods.js"></script>
+	<script src="script/craftables.js"></script>
+
+	<script src="script/engine.js"></script>
+	<script src="script/state_manager.js"></script>
+	<script src="script/header.js"></script>
+	<script src="script/notifications.js"></script>
+	<script src="script/events.js"></script>
+	<script src="script/room.js"></script>
+
+	<script src="script/device.js"></script>
+
+	<script src="script/outside.js"></script>
+	<script src="script/world.js"></script>
+	<script src="script/path.js"></script>
+	<script src="script/ship.js"></script>
+	<script src="script/space.js"></script>
+	<script src="script/prestige.js"></script>
+	<script src="script/scoring.js"></script>
+
+	<script src="script/character.js"></script>
+
+
+	<!-- Event modules -->
+	<script src="script/events/global.js"></script>
+	<script src="script/events/room.js"></script>
+	<script src="script/events/outside.js"></script>
+	<script src="script/events/encounters.js"></script>
+    <script src="script/events/setpieces.js"></script>
+
+	
+	<script type='text/javascript'>
+		var oldIE = false;
+	</script>
+	<!--[if lt IE 9]> 
+		<script type="text/javascript">oldIE = true;</script> 
+	<![endif]-->
+	
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link rel="stylesheet" type="text/css" href="css/room.css" />
+	<link rel="stylesheet" type="text/css" href="css/outside.css" />
+	<link rel="stylesheet" type="text/css" href="css/path.css" />
+	<link rel="stylesheet" type="text/css" href="css/world.css" />
+	<link rel="stylesheet" type="text/css" href="css/ship.css" />
+	<link rel="stylesheet" type="text/css" href="css/space.css" />
+	<link rel="stylesheet" type="text/css" href="css/terminal.css" />
+	
+</head>
+<body>
+	<div id="header-title"></div>
+	<div id="wrapper">
+	
+		
+		<div id="saveNotify"><script>document.write(_("saved."));</script></div>
+		<div id="content">
+			<div id="outerSlider">
+				<div id="main">
+					<div id="header"></div>
+				</div>
+			</div>
+		
+		</div>
+  </div>
+  
+</body>
+</html>
